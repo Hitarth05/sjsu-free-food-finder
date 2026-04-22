@@ -23,10 +23,10 @@ export default function Home() {
                     <h3 className="font-bold text-base">How it works</h3>
                   </div>
                   <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                    We automatically scan SJSU event listings every few hours and
-                    use AI to detect events offering free food or free stuff. No
+                    SJSU event listings are automatically scanned every few hours and
+                    AI is used to detect events offering free food or free stuff. No
                     account needed.
-                  </p>
+                </p>
                 </div>
               </div>
             </div>
@@ -36,8 +36,8 @@ export default function Home() {
  
       <footer className="border-t border-[var(--card-border)] mt-16">
         <div className="max-w-7xl mx-auto px-6 py-8 text-center">
-          <p className="text-sm text-[var(--text-secondary)]">
-            Built by SJSU students. Not affiliated with SJSU.
+        <p className="text-sm text-[var(--text-secondary)]">
+            Built by an SJSU student. Not affiliated with SJSU.
           </p>
         </div>
       </footer>

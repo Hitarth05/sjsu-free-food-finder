@@ -44,18 +44,18 @@ export default function EmailSubscribe() {
           You are subscribed!
         </div>
       ) : (
-        <div className="flex gap-2">
+        <div className="flex flex-col gap-2">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@sjsu.edu"
-            className="flex-1 text-sm px-4 py-2.5 rounded-xl border border-[var(--card-border)] bg-[var(--cream)] focus:outline-none focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue)]/10 transition-all"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-[var(--card-border)] bg-[var(--cream)] focus:outline-none focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue)]/10 transition-all"
           />
           <button
             onClick={handleSubmit}
             disabled={status === "loading"}
-            className="text-sm font-bold px-5 py-2.5 rounded-xl bg-[var(--dark)] text-white hover:bg-[var(--dark)]/90 transition-colors disabled:opacity-50"
+            className="w-full text-sm font-bold px-5 py-2.5 rounded-xl bg-[var(--dark)] text-white hover:bg-[var(--dark)]/90 transition-colors disabled:opacity-50"
           >
             {status === "loading" ? "..." : "Subscribe"}
           </button>
