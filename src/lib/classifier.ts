@@ -1,6 +1,7 @@
 import Groq from "groq-sdk";
  
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-120b";
  
 export interface ClassificationResult {
   has_free_food: boolean;
@@ -59,7 +60,7 @@ Respond with ONLY a valid JSON array. Every value must be properly quoted. Do no
  
     try {
       const response = await groq.chat.completions.create({
-        model: "llama-3.3-70b-versatile",
+        model: GROQ_MODEL,
         messages: [{ role: "user", content: prompt }],
         temperature: 0,
         max_tokens: 4000,
