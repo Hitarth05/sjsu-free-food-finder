@@ -104,7 +104,7 @@ Respond with ONLY a valid JSON array. Every value must be properly quoted. Do no
     }
  
     if (i + batchSize < events.length) {
-      await new Promise((resolve) => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 400));
     }
   }
  
